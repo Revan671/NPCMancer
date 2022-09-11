@@ -11,13 +11,14 @@
         android:layout_width="828dp"
         android:layout_height="967dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
         android:rotation="-21"
         android:src="@drawable/adobestock_310178441_removebg_preview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.838"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,11 +48,14 @@
 
     <Button
         android:id="@+id/button_first"
-        android:layout_width="155dp"
-        android:layout_height="107dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="245dp"
+        android:layout_height="172dp"
+        android:layout_marginBottom="36dp"
         android:background="@null"
+        android:backgroundTint="#00FF0000"
         android:text="@string/next"
+        android:textColor="#870606"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
