@@ -123,6 +123,7 @@ public class Character {
         return chaMod;
     }
 
+    // builder class
     public static class CharacterBuilder {
         private final String name;
         private String race;
@@ -141,6 +142,7 @@ public class Character {
         private int intelMod;
         private  int chaMod;
 
+        // builder function to initialize character objects
         public CharacterBuilder(String name) {
             this.name = name;
         }
