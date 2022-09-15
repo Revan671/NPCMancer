@@ -1,106 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/EditCharacterText"
-        android:layout_width="271dp"
+        android:layout_width="248dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:text="Edit Character"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
 
     <TextView
         android:id="@+id/NameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
         android:text="Name:"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="66dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
 
     <EditText
         android:id="@+id/EditableNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="John"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="49dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/RaceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Race:"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameText"
+        app:textAllCaps="true" />
 
     <Button
         android:id="@+id/RaceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Human"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="104dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditableNameText" />
 
     <TextView
         android:id="@+id/GenderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Gender:"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RaceText"
+        app:textAllCaps="true" />
 
     <Button
         android:id="@+id/GenderButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Male"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="158dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RaceButton" />
 
     <TextView
         android:id="@+id/StatblockText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Statblock"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderText"
+        app:textAllCaps="true" />
 
     <Button
         android:id="@+id/StatblockButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Noble"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderButton" />
 
     <TextView
         android:id="@+id/AlignmentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Alignment"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockText"
+        app:textAllCaps="true" />
 
     <Button
         android:id="@+id/AlignmentButton"
         android:layout_width="151dp"
         android:layout_height="61dp"
+        android:layout_marginStart="16dp"
         android:text="Lawful Neutral"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="256dp" />
 
     <TextView
         android:id="@+id/ArmorClassText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AC"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="317dp" />
 
     <EditText
         android:id="@+id/ArmorClassValue"
@@ -108,16 +142,16 @@
         android:layout_height="36dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="347dp" />
 
     <TextView
         android:id="@+id/HitPointsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HP"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="336dp" />
 
     <EditText
         android:id="@+id/HitPointsValue"
@@ -125,16 +159,16 @@
         android:layout_height="36dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="297dp" />
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="357dp" />
 
     <TextView
         android:id="@+id/WalkingSpeedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Speed"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="264dp" />
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="328dp" />
 
     <EditText
         android:id="@+id/WalkingSpeedValue"
@@ -142,87 +176,113 @@
         android:layout_height="36dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="297dp" />
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="347dp" />
 
     <TextView
         android:id="@+id/StrengthText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:text="Str"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="354dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <TextView
         android:id="@+id/DexterityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:text="Dex"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toEndOf="@+id/StrengthText"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <TextView
         android:id="@+id/ConstitutionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:text="Con"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toEndOf="@+id/DexterityText"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <TextView
         android:id="@+id/IntelligenceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
         android:text="Int"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/WisdomText"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <TextView
         android:id="@+id/WisdomText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
         android:text="Wis"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/CharismaText"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <TextView
         android:id="@+id/CharismaText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
         android:text="Cha"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:textAllCaps="true"
+        tools:layout_editor_absoluteY="412dp" />
 
     <Button
         android:id="@+id/RandomizeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
         android:text="Randomize Stats"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="478dp" />
+        app:layout_constraintBottom_toTopOf="@+id/CancelButton"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/CustomizeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="36dp"
         android:text="Customize Further"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="536dp" />
+        app:layout_constraintBottom_toTopOf="@+id/SaveButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/SaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="48dp"
         android:text="Save Changes"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="597dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/CancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="48dp"
         android:text="Cancel"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="645dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
