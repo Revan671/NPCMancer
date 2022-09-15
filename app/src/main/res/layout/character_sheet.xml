@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/EditCharacterText"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:text="Edit Character"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/NameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <EditText
+        android:id="@+id/EditableNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="John"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/RaceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Race:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <Button
+        android:id="@+id/RaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/GenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:id="@+id/GenderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/StatblockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statblock"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/StatblockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noble"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <TextView
+        android:id="@+id/AlignmentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alignment"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/AlignmentButton"
+        android:layout_width="151dp"
+        android:layout_height="61dp"
+        android:text="Lawful Neutral"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/ArmorClassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AC"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:id="@+id/ArmorClassValue"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <TextView
+        android:id="@+id/HitPointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:id="@+id/HitPointsValue"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/WalkingSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/WalkingSpeedValue"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/StrengthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Str"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <TextView
+        android:id="@+id/DexterityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dex"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/ConstitutionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/IntelligenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Int"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/WisdomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wis"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/CharismaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cha"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/RandomizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Randomize Stats"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <Button
+        android:id="@+id/CustomizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize Further"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
