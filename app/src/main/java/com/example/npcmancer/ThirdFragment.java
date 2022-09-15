@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.npcmancer.databinding.FragmentSecondBinding;
+import com.example.npcmancer.databinding.FragmentThirdBinding;
 
-public class SecondFragment extends Fragment {
+public class ThirdFragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private FragmentThirdBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,28 +21,21 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = FragmentThirdBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ThirdFragment.this)
+                        .navigate(R.id.action_thirdFragment_to_SecondFragment);
+            }
+        });
 
-        binding.buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_thirdFragment);
-            }
-        });
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });
     }
 
     @Override
@@ -50,5 +43,4 @@ public class SecondFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }
