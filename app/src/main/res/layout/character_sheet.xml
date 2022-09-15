@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/EditCharacterText"
         android:layout_width="248dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="Edit Character"
         app:fontFamily="@font/mrseav9"
@@ -19,10 +19,10 @@
 
     <TextView
         android:id="@+id/NameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="84dp"
         android:text="Name:"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,9 +31,9 @@
 
     <EditText
         android:id="@+id/EditableNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -43,10 +43,10 @@
 
     <TextView
         android:id="@+id/RaceText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:text="Race:"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +55,9 @@
 
     <Button
         android:id="@+id/RaceButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="Human"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,10 +65,10 @@
 
     <TextView
         android:id="@+id/GenderText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:text="Gender:"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,9 +77,9 @@
 
     <Button
         android:id="@+id/GenderButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="Male"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,11 +87,11 @@
 
     <TextView
         android:id="@+id/StatblockText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Statblock"
+        android:layout_marginTop="28dp"
+        android:text="Statblock:"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GenderText"
@@ -99,9 +99,9 @@
 
     <Button
         android:id="@+id/StatblockButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="Noble"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,11 +109,11 @@
 
     <TextView
         android:id="@+id/AlignmentText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Alignment"
+        android:layout_marginTop="28dp"
+        android:text="Alignment:"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/StatblockText"
@@ -121,166 +121,254 @@
 
     <Button
         android:id="@+id/AlignmentButton"
-        android:layout_width="151dp"
-        android:layout_height="61dp"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Lawful Neutral"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="256dp" />
+        app:layout_constraintTop_toBottomOf="@+id/AlignmentText" />
 
     <TextView
         android:id="@+id/ArmorClassText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
         android:text="AC"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/HitPointsText"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
 
     <EditText
         android:id="@+id/ArmorClassValue"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="347dp" />
+        app:layout_constraintEnd_toStartOf="@+id/HitPointsValue"
+        app:layout_constraintTop_toBottomOf="@+id/ArmorClassText" />
 
     <TextView
         android:id="@+id/HitPointsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:text="HP"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="336dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/WalkingSpeedText"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
 
     <EditText
         android:id="@+id/HitPointsValue"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintEnd_toStartOf="@+id/WalkingSpeedValue"
+        app:layout_constraintTop_toBottomOf="@+id/HitPointsText" />
 
     <TextView
         android:id="@+id/WalkingSpeedText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
         android:text="Speed"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
 
     <EditText
         android:id="@+id/WalkingSpeedValue"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <TextView
-        android:id="@+id/StrengthText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="Str"
-        app:fontFamily="@font/mrseav9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
-
-    <TextView
-        android:id="@+id/DexterityText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="Dex"
-        app:fontFamily="@font/mrseav9"
-        app:layout_constraintStart_toEndOf="@+id/StrengthText"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalkingSpeedText" />
 
     <TextView
         android:id="@+id/ConstitutionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="376dp"
         android:text="Con"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/DexterityText"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
+        app:textAllCaps="true" />
 
-    <TextView
-        android:id="@+id/IntelligenceText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:text="Int"
-        app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toStartOf="@+id/WisdomText"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
+    <EditText
+        android:id="@+id/StrengthValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StrengthText" />
+
+    <EditText
+        android:id="@+id/IntelligenceValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/WisdomValue"
+        app:layout_constraintTop_toBottomOf="@+id/IntelligenceText" />
 
     <TextView
         android:id="@+id/WisdomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="376dp"
         android:text="Wis"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/CharismaText"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
+        app:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/DexterityText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="Dex"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StrengthText"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/ConstitutionValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/DexterityValue"
+        app:layout_constraintTop_toBottomOf="@+id/ConstitutionText" />
+
+    <EditText
+        android:id="@+id/WisdomValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/CharismaValue"
+        app:layout_constraintTop_toBottomOf="@+id/WisdomText" />
+
+    <TextView
+        android:id="@+id/StrengthText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="376dp"
+        android:text="Str"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/CharismaValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharismaText" />
 
     <TextView
         android:id="@+id/CharismaText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="376dp"
         android:text="Cha"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:textAllCaps="true"
-        tools:layout_editor_absoluteY="412dp" />
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/DexterityValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/StrengthValue"
+        app:layout_constraintTop_toBottomOf="@+id/DexterityText" />
+
+    <TextView
+        android:id="@+id/IntelligenceText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="Int"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/WisdomText"
+        app:textAllCaps="true" />
 
     <Button
         android:id="@+id/RandomizeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
         android:text="Randomize Stats"
         app:layout_constraintBottom_toTopOf="@+id/CancelButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/CustomizeButton"
-        android:layout_width="135dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
         android:text="Customize Further"
         app:layout_constraintBottom_toTopOf="@+id/SaveButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/SaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="64dp"
         android:text="Save Changes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/CancelButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
