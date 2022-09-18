@@ -2,16 +2,18 @@ package com.example.npcmancer;
 
 // this class holds the variables for character information
 
+import android.widget.TextView;
+
 public class Character {
 
     // character name
-    private final String name;
+    private final TextView name;
 
     // character race
-    private final String race;
+    private final TextView race;
 
     // character subRace for when it is applicable
-    private final String subRace;
+    private final TextView subRace;
 
     // character age
     private final int age;
@@ -74,13 +76,13 @@ public class Character {
     }
 
     // getters
-    public String getName() {
+    public TextView getName() {
         return name;
     }
-    public String getRace() {
+    public TextView getRace() {
         return race;
     }
-    public String getSubRace() {
+    public TextView getSubRace() {
         return subRace;
     }
     public int getAge() {
@@ -125,9 +127,9 @@ public class Character {
 
     // builder class
     public static class CharacterBuilder {
-        private final String name;
-        private String race;
-        private String subRace;
+        private final TextView name;
+        private TextView race;
+        private TextView subRace;
         private int age;
         private  int str;
         private  int dex;
@@ -143,14 +145,14 @@ public class Character {
         private  int chaMod;
 
         // builder function to initialize character objects
-        public CharacterBuilder(String name) {
+        public CharacterBuilder(TextView name) {
             this.name = name;
         }
-        public CharacterBuilder race(String race) {
+        public CharacterBuilder race(TextView race) {
             this.race = race;
             return this;
         }
-        public CharacterBuilder subRace(String subRace) {
+        public CharacterBuilder subRace(TextView subRace) {
             this.subRace = subRace;
             return this;
         }

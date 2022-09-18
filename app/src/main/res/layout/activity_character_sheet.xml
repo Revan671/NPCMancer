@@ -422,7 +422,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintBottom_toTopOf="@+id/CancelButton"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:onClick="randomizeCharacter" />
 
     <Button
         android:id="@+id/CustomizeButton"
@@ -435,7 +437,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintBottom_toTopOf="@+id/SaveButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:onClick="customizeCharacterFurther" />
 
     <Button
         android:id="@+id/SaveButton"
@@ -448,7 +452,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:onClick="saveCharacter" />
 
     <Button
         android:id="@+id/CancelButton"
@@ -461,6 +467,8 @@
         android:textColor="#320709"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:onClick="cancelCharacterChanges" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
