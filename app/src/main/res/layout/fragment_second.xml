@@ -24,6 +24,7 @@
         android:backgroundTint="#E8CA9C"
         android:fontFamily="@font/mrseav9family"
         android:text="@string/previous"
+        android:onClick="PrevClick"
         android:textColor="#320709"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
