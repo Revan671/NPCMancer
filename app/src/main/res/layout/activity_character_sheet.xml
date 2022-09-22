@@ -55,7 +55,9 @@
         android:gravity="center"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:onClick="editName"/>
 
     <TextView
         android:id="@+id/RaceText"
@@ -85,7 +87,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditableNameText" />
+        app:layout_constraintTop_toBottomOf="@+id/EditableNameText"
+
+        android:onClick="chooseRace"/>
 
     <TextView
         android:id="@+id/GenderText"
@@ -115,7 +119,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RaceButton" />
+        app:layout_constraintTop_toBottomOf="@+id/RaceButton"
+
+        android:onClick="chooseGender" />
 
     <TextView
         android:id="@+id/StatblockText"
@@ -145,7 +151,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GenderButton" />
+        app:layout_constraintTop_toBottomOf="@+id/GenderButton"
+
+        android:onClick="chooseStatblock" />
 
     <TextView
         android:id="@+id/AlignmentText"
@@ -175,7 +183,9 @@
         app:fontFamily="@font/mrseav9"
         android:backgroundTint="#E8CA9C"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AlignmentText" />
+        app:layout_constraintTop_toBottomOf="@+id/AlignmentText"
+
+        android:onClick="chooseAlignment" />
 
     <TextView
         android:id="@+id/ArmorClassText"
