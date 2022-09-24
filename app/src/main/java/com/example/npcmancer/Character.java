@@ -7,13 +7,13 @@ import android.widget.TextView;
 public class Character {
 
     // character name
-    private final TextView name;
+    private final String name;
 
     // character race
-    private final TextView race;
+    private final String race;
 
     // character subRace for when it is applicable
-    private final TextView subRace;
+    private final String subRace;
 
     // character age
     private final int age;
@@ -76,13 +76,13 @@ public class Character {
     }
 
     // getters
-    public TextView getName() {
+    public String getName() {
         return name;
     }
-    public TextView getRace() {
+    public String getRace() {
         return race;
     }
-    public TextView getSubRace() {
+    public String getSubRace() {
         return subRace;
     }
     public int getAge() {
@@ -127,32 +127,32 @@ public class Character {
 
     // builder class
     public static class CharacterBuilder {
-        private final TextView name;
-        private TextView race;
-        private TextView subRace;
+        private final String name;
+        private String race;
+        private String subRace;
         private int age;
-        private  int str;
-        private  int dex;
+        private int str;
+        private int dex;
         private int con;
         private int wis;
-        private  int intel;
+        private int intel;
         private int cha;
         private int strMod;
         private int dexMod;
-        private  int conMod;
-        private  int wisMod;
+        private int conMod;
+        private int wisMod;
         private int intelMod;
-        private  int chaMod;
+        private int chaMod;
 
         // builder function to initialize character objects
-        public CharacterBuilder(TextView name) {
+        public CharacterBuilder(String name) {
             this.name = name;
         }
-        public CharacterBuilder race(TextView race) {
+        public CharacterBuilder race(String race) {
             this.race = race;
             return this;
         }
-        public CharacterBuilder subRace(TextView subRace) {
+        public CharacterBuilder subRace(String subRace) {
             this.subRace = subRace;
             return this;
         }
