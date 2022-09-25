@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
 
     }
 
