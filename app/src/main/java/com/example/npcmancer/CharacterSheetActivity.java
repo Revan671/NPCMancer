@@ -2,16 +2,12 @@ package com.example.npcmancer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.os.Bundle;
-import android.view.MotionEvent;
+//import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-
 import android.widget.EditText;
-import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class CharacterSheetActivity extends AppCompatActivity {
 
@@ -34,7 +30,6 @@ public class CharacterSheetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_sheet);
-
 
         // pull user entered data from editable text boxes
         // entered name data
@@ -70,14 +65,12 @@ public class CharacterSheetActivity extends AppCompatActivity {
         mWis = (R.id.WisdomValue);
         mCha = (R.id.CharismaValue);
 
+        }
 
-
-    }
-
-    @Override
+    /*@Override
     public boolean onTouchEvent(MotionEvent event) {
         return super.onTouchEvent((event));
-    }
+    }*/
 
     // these buttons should probably include drop-down menus to display the options available
     // that functionality has not yet been implemented
