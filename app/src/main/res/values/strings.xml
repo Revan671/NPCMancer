@@ -13,4 +13,34 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- String resources for character sheet -->
+    <string name="edit_character_label">Edit Character</string>
+    <string name="name_label">Name:</string>
+    <string name="race_label">Race:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="statblock_label">Statblock:</string>
+    <string name="alignment_label">Alignment:</string>
+    <string name="ac_label">AC</string>
+    <string name="hp_label">HP</string>
+    <string name="speed_label">Speed</string>
+    <string name="str_label">Str</string>
+    <string name="dex_label">Dex</string>
+    <string name="con_label">Con</string>
+    <string name="int_label">Int</string>
+    <string name="wis_label">Wis</string>
+    <string name="cha_label">Cha</string>
+
+    <string name="initial_name_text">John</string>
+
+    <string name="button_label_race">Human</string>
+    <string name="button_label_gender">Male</string>
+    <string name="button_label_statblock">Noble</string>
+    <string name="button_label_alignment">Lawful Neutral</string>
+    <string name="button_label_customize">Customize Further</string>
+    <string name="button_label_randomize">Randomize Stats</string>
+    <string name="button_label_save">Save Changes</string>
+    <string name="button_label_cancel">Cancel</string>
+
+
 </resources>

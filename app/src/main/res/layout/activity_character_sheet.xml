@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/npcm_background"
+    >
+
+    <TextView
+        android:id="@+id/EditCharacterText"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_character_label"
+        android:textColor="#320709"
+        android:textSize="29sp"
+        android:gravity="center"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/NameText"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:textColor="#320709"
+        android:text="@string/name_label"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/EditableNameText"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textPersonName"
+        android:text="@string/initial_name_text"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:onClick="editName"/>
+
+    <TextView
+        android:id="@+id/RaceText"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/race_label"
+        android:textColor="#320709"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameText"
+        app:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/RaceButton"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_label_race"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditableNameText"
+
+        android:onClick="chooseRace"/>
+
+    <TextView
+        android:id="@+id/GenderText"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/gender_label"
+        android:textColor="#320709"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RaceText"
+        app:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/GenderButton"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_label_gender"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RaceButton"
+
+        android:onClick="chooseGender" />
+
+    <TextView
+        android:id="@+id/StatblockText"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/statblock_label"
+        android:textColor="#320709"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderText"
+        app:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/StatblockButton"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_label_statblock"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderButton"
+
+        android:onClick="chooseStatblock" />
+
+    <TextView
+        android:id="@+id/AlignmentText"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/alignment_label"
+        android:textColor="#320709"
+        android:shadowColor="#CFA030"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockText"
+        app:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/AlignmentButton"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_label_alignment"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AlignmentText"
+
+        android:onClick="chooseAlignment" />
+
+    <TextView
+        android:id="@+id/ArmorClassText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/ac_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/HitPointsText"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
+
+    <EditText
+        android:id="@+id/ArmorClassValue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/HitPointsValue"
+        app:layout_constraintTop_toBottomOf="@+id/ArmorClassText" />
+
+    <TextView
+        android:id="@+id/HitPointsText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hp_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toStartOf="@+id/WalkingSpeedText"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
+
+    <EditText
+        android:id="@+id/HitPointsValue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/WalkingSpeedValue"
+        app:layout_constraintTop_toBottomOf="@+id/HitPointsText" />
+
+    <TextView
+        android:id="@+id/WalkingSpeedText"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/speed_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatblockButton" />
+
+    <EditText
+        android:id="@+id/WalkingSpeedValue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalkingSpeedText" />
+
+    <TextView
+        android:id="@+id/ConstitutionText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/con_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DexterityText"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/StrengthValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StrengthText" />
+
+    <EditText
+        android:id="@+id/IntelligenceValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/WisdomValue"
+        app:layout_constraintTop_toBottomOf="@+id/IntelligenceText" />
+
+    <TextView
+        android:id="@+id/WisdomText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/wis_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CharismaText"
+        app:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/DexterityText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/dex_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StrengthText"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/ConstitutionValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/DexterityValue"
+        app:layout_constraintTop_toBottomOf="@+id/ConstitutionText" />
+
+    <EditText
+        android:id="@+id/WisdomValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/CharismaValue"
+        app:layout_constraintTop_toBottomOf="@+id/WisdomText" />
+
+    <TextView
+        android:id="@+id/StrengthText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/str_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/CharismaValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharismaText" />
+
+    <TextView
+        android:id="@+id/CharismaText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="376dp"
+        android:gravity="center"
+        android:text="@string/cha_label"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/DexterityValue"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/StrengthValue"
+        app:layout_constraintTop_toBottomOf="@+id/DexterityText" />
+
+    <TextView
+        android:id="@+id/IntelligenceText"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/int_label"
+        android:textColor="#320709"
+        android:gravity="center"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/WisdomText"
+        app:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/RandomizeButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/button_label_randomize"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintBottom_toTopOf="@+id/CancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:onClick="randomizeCharacter" />
+
+    <Button
+        android:id="@+id/CustomizeButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/button_label_customize"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintBottom_toTopOf="@+id/SaveButton"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:onClick="customizeCharacterFurther" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/button_label_save"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        android:backgroundTint="#E8CA9C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:onClick="saveCharacter" />
+
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#E8CA9C"
+        android:text="@string/button_label_cancel"
+        android:textColor="#320709"
+        app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:onClick="cancelCharacterChanges" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
