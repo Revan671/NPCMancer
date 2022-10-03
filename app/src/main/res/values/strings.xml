@@ -42,5 +42,45 @@
     <string name="button_label_save">Save Changes</string>
     <string name="button_label_cancel">Cancel</string>
 
+    <!-- String resources for generate NPC-->
+    <string name="generate_npc_label">Generate NPC</string>
+
+    <string name="Dragonborn_label">Dragonborn</string>
+    <string name="Dwarf_label">Dwarf</string>
+    <string name="Elf_label">Elf</string>
+    <string name="Gnome_label">Gnome</string>
+    <string name="HalfElf_label">Half Elf</string>
+    <string name="Halfling_label">Halfling</string>
+    <string name="HalfOrc_label">Half Orc</string>
+    <string name="Human_label">Human</string>
+    <string name="Tiefling_label">Tiefling</string>
+
+    <string name="button_label_male">Male</string>
+    <string name="button_label_female">Female</string>
+    <string name="button_label_nonGendered">Non Gendered</string>
+
+    <string name="button_label_acolyte">Acolyte</string>
+    <string name="button_label_archmage">Archmage</string>
+    <string name="button_label_assassin">Assassin</string>
+    <string name="button_label_bandit">Bandit</string>
+    <string name="button_label_banditCaptain">Bandit Captain</string>
+    <string name="button_label_berserker">Berserker</string>
+    <string name="button_label_commoner">Commoner</string>
+    <string name="button_label_cultist">Cultist</string>
+    <string name="button_label_cultFanatic">Cult Fanatic</string>
+    <string name="button_label_druid">Druid</string>
+    <string name="button_label_gladiator">Gladiator</string>
+    <string name="button_label_guard">Guard</string>
+    <string name="button_label_knight">Knight</string>
+    <string name="button_label_mage">Mage</string>
+    <string name="button_label_noble">Noble</string>
+    <string name="button_label_priest">Priest</string>
+
+    <string name="button_label_next">Next</string>
+    <string name="button_label_reRoll_names">Reroll Names</string>
+    <string name="button_label_name_selection">Back To Name Selection</string>
+    <string name="button_label_race_selection">Back To Race Selection</string>
+    <string name="button_label_stat_selection">Back To Statblock Selection</string>
+
 
 </resources>
