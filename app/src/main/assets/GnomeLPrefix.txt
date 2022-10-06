@@ -11,3 +11,10 @@ Shelf
 Alabaster
 Deposit
 Peridot
+Domble
+Nimble
+Dig
+Rum
+Clock
+Fizzle
+Filly
