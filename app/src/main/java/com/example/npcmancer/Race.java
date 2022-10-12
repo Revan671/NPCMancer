@@ -1,6 +1,11 @@
 package com.example.npcmancer;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 public class Race {
     // race Name
     private final String name;
@@ -34,6 +39,7 @@ public class Race {
         else
             lPostfix.add(postfix);
     }
+
     //returns a list by its list number (written in the comments above)
     public List<String> getNameList(int list) {
         List<String> results = new ArrayList<String>();
@@ -53,6 +59,30 @@ public class Race {
         }
         return results;
     }
+
+    private static void readFileToList(String fileName, List<String> List) throws IOException {
+
+        BufferedReader br = null;
+
+        try {
+
+            br = new BufferedReader(new FileReader(fileName));
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                List.add(line);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                br.close();
+            }
+        }
+        return;
+    }
+
     public String getName() {
         return name;
     }
