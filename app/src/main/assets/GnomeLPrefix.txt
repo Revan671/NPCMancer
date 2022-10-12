@@ -18,3 +18,9 @@ Rum
 Clock
 Fizzle
 Filly
+Short
+Tinker
+Wiggle
+Ziple
+Pappl
+Marble
