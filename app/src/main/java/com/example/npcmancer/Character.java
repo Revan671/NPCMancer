@@ -2,6 +2,8 @@ package com.example.npcmancer;
 
 // this class holds the variables for character information
 
+import android.widget.TextView;
+
 public class Character {
 
     // character name
@@ -129,18 +131,18 @@ public class Character {
         private String race;
         private String subRace;
         private int age;
-        private  int str;
-        private  int dex;
+        private int str;
+        private int dex;
         private int con;
         private int wis;
-        private  int intel;
+        private int intel;
         private int cha;
         private int strMod;
         private int dexMod;
-        private  int conMod;
-        private  int wisMod;
+        private int conMod;
+        private int wisMod;
         private int intelMod;
-        private  int chaMod;
+        private int chaMod;
 
         // builder function to initialize character objects
         public CharacterBuilder(String name) {
