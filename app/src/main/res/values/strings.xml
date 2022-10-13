@@ -77,10 +77,12 @@
     <string name="button_label_priest">Priest</string>
 
     <string name="button_label_next">Next</string>
+    <string name="button_label_back">Back</string>
     <string name="button_label_reRoll_names">Reroll Names</string>
     <string name="button_label_name_selection">Back To Name Selection</string>
     <string name="button_label_race_selection">Back To Race Selection</string>
     <string name="button_label_stat_selection">Back To Statblock Selection</string>
+
 
 
 </resources>
