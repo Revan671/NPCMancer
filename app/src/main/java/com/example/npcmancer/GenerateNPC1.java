@@ -75,4 +75,16 @@ public class GenerateNPC1 extends AppCompatActivity {
         intent.putExtra("Gender", mGender);
         startActivity(intent);
     }
+
+    // retrieve data from GenerateNPC2
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1) {
+            if(resultCode == RESULT_OK) {
+                mRace = data.getStringExtra("Race");
+                mGender = data.getStringExtra("Gender");
+            }
+        }
+    }
 }

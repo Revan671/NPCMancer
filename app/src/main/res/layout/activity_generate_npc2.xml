@@ -66,7 +66,10 @@
         app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:textAllCaps="true" />
+        app:textAllCaps="true"
+
+        android:onClick="toGenerateNPC1"
+        />
 
     <Button
         android:layout_width="0dp"

@@ -115,7 +115,10 @@
         app:fontFamily="@font/mrseav9"
         app:layout_constraintBottom_toTopOf="@+id/button21"
         app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:onClick="toGenerateNPC2"
+        />
 
     <Button
         android:id="@+id/button21"

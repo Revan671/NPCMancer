@@ -64,4 +64,16 @@ public class GenerateNPC3 extends AppCompatActivity {
                 break;
         }
     }
+
+    // go back to GenerateNPC2 button click
+    public void toGenerateNPC2(View view) {
+
+        // applicable data to send back to GenerateNPC2
+        Intent intent = new Intent();
+        intent.putExtra("Race", mRace);
+        intent.putExtra("Gender", mGender);
+        intent.putExtra("Name", mName);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 }
