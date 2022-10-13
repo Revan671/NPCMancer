@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".GenerateNPC3"
     android:background="@drawable/npcm_background"
-    tools:context=".GenerateNPC3">
+    >
 
     <TextView
         android:id="@+id/textView10"
@@ -24,9 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:textAllCaps="true"
-
-        />
+        app:textAllCaps="true" />
 
     <TextView
         android:id="@+id/textView11"
@@ -102,9 +101,10 @@
         android:id="@+id/button22"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#E8CA9C"
+        android:onClick="toGenerateNPC2"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
@@ -113,18 +113,16 @@
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintBottom_toTopOf="@+id/button21"
+
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
-
-        android:onClick="toGenerateNPC2"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/commonerNPC3" />
 
     <Button
         android:id="@+id/button21"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#E8CA9C"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
@@ -134,10 +132,10 @@
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button22" />
 
     <Button
         android:id="@+id/acolyteNPC3"
@@ -194,6 +192,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#E8CA9C"
+        android:onClick="chooseStatblockButton"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
@@ -204,10 +203,8 @@
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/acolyteNPC3"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
 
-        android:onClick="chooseStatblockButton"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Button
         android:id="@+id/banditNPC3"
@@ -376,19 +373,19 @@
         android:layout_height="wrap_content"
 
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#E8CA9C"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
         android:shadowRadius="1.6"
-        android:text="@string/button_label_next"
 
+        android:text="@string/button_label_next"
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintBottom_toTopOf="@+id/button21"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button22" />
+        app:layout_constraintStart_toEndOf="@+id/button22"
+        app:layout_constraintTop_toBottomOf="@+id/cultistNPC3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
