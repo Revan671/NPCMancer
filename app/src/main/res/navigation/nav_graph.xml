@@ -27,6 +27,12 @@
         <action
             android:id="@+id/action_SecondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_generateNPC1"
+            app:destination="@id/generateNPC1" />
+        <action
+            android:id="@+id/action_SecondFragment_to_generateNPC12"
+            app:destination="@id/generateNPC1" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
@@ -37,4 +43,19 @@
             android:id="@+id/action_thirdFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+    <activity
+        android:id="@+id/generateNPC1"
+        android:name="com.example.npcmancer.GenerateNPC1"
+        android:label="activity_generate_npc1"
+        tools:layout="@layout/activity_generate_npc1" />
+    <activity
+        android:id="@+id/generateNPC2"
+        android:name="com.example.npcmancer.GenerateNPC2"
+        android:label="activity_generate_npc2"
+        tools:layout="@layout/activity_generate_npc2" />
+    <activity
+        android:id="@+id/generateNPC3"
+        android:name="com.example.npcmancer.GenerateNPC3"
+        android:label="activity_generate_npc3"
+        tools:layout="@layout/activity_generate_npc3" />
 </navigation>
