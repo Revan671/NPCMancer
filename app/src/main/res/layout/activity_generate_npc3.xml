@@ -137,7 +137,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/acolyteNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -152,7 +152,7 @@
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/archmageNPC3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
 
@@ -160,7 +160,7 @@
         />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/assassinNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -175,16 +175,16 @@
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/banditNPC3"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/acolyteNPC3"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/archmageNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -200,14 +200,14 @@
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/acolyteNPC3"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/banditNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -223,14 +223,14 @@
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button14"
-        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/assassinNPC3"
+        app:layout_constraintTop_toBottomOf="@+id/archmageNPC3"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/banditCaptainNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -245,16 +245,16 @@
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toStartOf="@+id/button18"
+        app:layout_constraintEnd_toStartOf="@+id/berserkerNPC3"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/assassinNPC3"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/berserkerNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -270,14 +270,14 @@
         android:textSize="20sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button17"
-        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintStart_toEndOf="@+id/banditCaptainNPC3"
+        app:layout_constraintTop_toBottomOf="@+id/banditNPC3"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/commonerNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -292,15 +292,15 @@
         android:textColor="#320709"
         android:textSize="20sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toStartOf="@+id/button20"
+        app:layout_constraintEnd_toStartOf="@+id/cultistNPC3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/banditCaptainNPC3"
 
         android:onClick="chooseStatblockButton"
         />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/cultistNPC3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -316,8 +316,8 @@
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button19"
-        app:layout_constraintTop_toBottomOf="@+id/button18"
+        app:layout_constraintStart_toEndOf="@+id/commonerNPC3"
+        app:layout_constraintTop_toBottomOf="@+id/berserkerNPC3"
 
         android:onClick="chooseStatblockButton"
         />

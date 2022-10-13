@@ -35,16 +35,33 @@ public class GenerateNPC3 extends AppCompatActivity {
 
     public void chooseStatblockButton(View view) {
         switch (view.getId()) {
-            case R.id.maleButtonNPC1:
-                mGender = "Male";
+            case R.id.acolyteNPC3:
+                // insert statblock assign code
+
                 break;
-            case R.id.femaleButtonNPC1:
-                mGender = "Female";
+            case R.id.archmageNPC3:
+
                 break;
-            case R.id.nonGenderedButtonNPC1:
-                mGender = "Non-gendered";
+            case R.id.assassinNPC3:
+
+                break;
+            case R.id.banditNPC3:
+                // insert statblock assign code
+
+                break;
+            case R.id.banditCaptainNPC3:
+
+                break;
+            case R.id.berserkerNPC3:
+
+                break;
+            case R.id.commonerNPC3:
+                // insert statblock assign code
+
+                break;
+            case R.id.cultistNPC3:
+
                 break;
         }
     }
-
 }
