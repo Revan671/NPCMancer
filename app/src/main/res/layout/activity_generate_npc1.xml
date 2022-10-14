@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GenerateNPC1"
     android:background="@drawable/npcm_background"
-    >
+    tools:context=".GenerateNPC1">
 
     <TextView
         android:id="@+id/textView3"
@@ -22,9 +21,12 @@
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
         app:textAllCaps="true" />
 
     <TextView
@@ -41,18 +43,18 @@
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/dragonbornImageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
@@ -61,6 +63,7 @@
         android:textColor="#320709"
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/maleButtonNPC1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,31 +71,34 @@
 
     <Button
         android:id="@+id/maleButtonNPC1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#E8CA9C"
         android:onClick="chooseGenderButton"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
+
         android:shadowRadius="1.6"
         android:text="@string/button_label_male"
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintBottom_toTopOf="@+id/nonGenderedButtonNPC1"
+        app:layout_constraintEnd_toStartOf="@+id/femaleButtonNPC1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
-
         app:textAllCaps="true" />
 
     <Button
         android:id="@+id/femaleButtonNPC1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#E8CA9C"
         android:onClick="chooseGenderButton"
         android:shadowColor="#CFA030"
@@ -103,298 +109,309 @@
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toBottomOf="@+id/maleButtonNPC1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/maleButtonNPC1"
+        app:layout_constraintTop_toTopOf="@+id/maleButtonNPC1"
+        app:layout_constraintVertical_bias="0.0"
         app:textAllCaps="true" />
 
     <Button
         android:id="@+id/nonGenderedButtonNPC1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#E8CA9C"
         android:onClick="chooseGenderButton"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
+
         android:shadowRadius="1.6"
         android:text="@string/button_label_nonGendered"
         android:textColor="#320709"
         android:textSize="28sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maleButtonNPC1"
         app:textAllCaps="true" />
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="26dp"
-        android:layout_marginTop="136dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/Dragonborn_label"
         android:textColor="#320709"
-        android:textSize="24sp"
+        android:textSize="23sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/gnomeImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView21"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/dragonbornImageButton" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="26dp"
-        android:layout_marginTop="136dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/Dwarf_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintBottom_toTopOf="@+id/halfElfImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/dwarfImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="48dp"
         android:text="@string/Elf_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/halflingImageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/elfImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="144dp"
         android:text="@string/Gnome_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/halfOrcImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/gnomeImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
         android:text="@string/HalfElf_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintBottom_toTopOf="@+id/humanImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/halfElfImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="24dp"
         android:text="@string/Halfling_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/tieflingImageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/halflingImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/HalfOrc_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/textView27"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/halfOrcImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/Human_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/textView28"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/humanImageButton"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/Tiefling_label"
         android:textColor="#320709"
         android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/tieflingImageButton"
+        android:gravity="center"
+        />
 
     <ImageButton
         android:id="@+id/dragonbornImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintEnd_toStartOf="@+id/dwarfImageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/dwarfImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
+        android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintEnd_toStartOf="@+id/elfImageButton"
         app:layout_constraintStart_toEndOf="@+id/dragonbornImageButton"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/elfImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
+        android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView22"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dwarfImageButton"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        app:layout_constraintVertical_bias="0.52"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/gnomeImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:onClick="chooseRaceButton"
+
         app:layout_constraintBottom_toTopOf="@+id/textView23"
         app:layout_constraintEnd_toStartOf="@+id/halfElfImageButton"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/halfElfImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:onClick="chooseRaceButton"
+
         app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintEnd_toStartOf="@+id/halflingImageButton"
         app:layout_constraintStart_toEndOf="@+id/gnomeImageButton"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/halflingImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
+        android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/halfElfImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/halfOrcImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="2dp"
+
         android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView26"
         app:layout_constraintEnd_toStartOf="@+id/humanImageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.0"
-
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/humanImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
+
+        android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toStartOf="@+id/tieflingImageButton"
         app:layout_constraintStart_toEndOf="@+id/halfOrcImageButton"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.857"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/tieflingImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
+        android:onClick="chooseRaceButton"
         app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/humanImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-
-        android:onClick="chooseRaceButton"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
 
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#E8CA9C"
         android:onClick="toGenerateNPC2"
         android:shadowColor="#CFA030"
+
         android:shadowDx="1.5"
         android:shadowDy="1.3"
+
         android:shadowRadius="1.6"
         android:text="@string/button_label_next"
         android:textColor="#320709"
-
         android:textSize="32sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

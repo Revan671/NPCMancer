@@ -145,20 +145,19 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#E8CA9C"
+        android:onClick="chooseStatblockButton"
         android:shadowColor="#CFA030"
         android:shadowDx="1.5"
         android:shadowDy="1.3"
         android:shadowRadius="1.6"
         android:text="@string/button_label_acolyte"
         android:textColor="#320709"
-        android:textSize="28sp"
+        android:textSize="24sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toStartOf="@+id/archmageNPC3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
 
-        android:onClick="chooseStatblockButton"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Button
         android:id="@+id/assassinNPC3"
@@ -199,7 +198,7 @@
         android:shadowRadius="1.6"
         android:text="@string/button_label_archmage"
         android:textColor="#320709"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:fontFamily="@font/mrseav9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/acolyteNPC3"
