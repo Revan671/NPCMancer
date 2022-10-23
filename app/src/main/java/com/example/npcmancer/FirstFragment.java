@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultCallback;
@@ -67,10 +68,8 @@ public class FirstFragment extends Fragment {
                     .navigate(R.id.action_FirstFragment_to_SecondFragment);
         }
 
-
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
         private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
