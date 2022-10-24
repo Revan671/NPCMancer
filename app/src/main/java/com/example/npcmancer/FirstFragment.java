@@ -117,6 +117,8 @@ public class FirstFragment extends Fragment {
 
                 List<AuthUI.IdpConfig> providers = Arrays.asList(
                         new AuthUI.IdpConfig.EmailBuilder().build(),
+                        new AuthUI.IdpConfig.PhoneBuilder().build(),
+                        new AuthUI.IdpConfig.TwitterBuilder().build(),
                         new AuthUI.IdpConfig.GoogleBuilder().build());
                 Intent signInIntent = AuthUI.getInstance()
                         .createSignInIntentBuilder()
